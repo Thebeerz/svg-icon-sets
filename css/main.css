@@ -32,6 +32,7 @@ section {
   justify-content: center;
   gap: 6vmin;
   padding: 1rem 6vmin;
+  margin: 1rem;
 }
 
 a {
@@ -51,15 +52,16 @@ div {
   position: relative;
   height: 8em;
   width: 8em;
+  margin-bottom: 1rem;
 }
 
 svg {
   left: 0;
-  height: 100%;
+  height: 98%;
   position: absolute;
   top: 0;
   width: 100%;
-  fill: currentColor;
+  fill: #fff;
 }
 
 li {
@@ -67,32 +69,38 @@ li {
   text-decoration: none;
 }
 
-h3 {
+p {
   font-weight: normal;
 }
 
-h1 {
+h2 {
   text-align: center;
   font-size: 2rem;
-  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem
 }
 
-h2 {
+h3 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
 .ghost-btn {
   border: solid .2rem #fff;
   padding: 1rem;
   font-weight: normal;
-  margin-top: 1rem;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #ff5e3a;
 }
 
 @media only screen and (min-width: 38em) {
 
   html {
   font-size: 100%;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 }
