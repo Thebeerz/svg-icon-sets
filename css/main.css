@@ -10,8 +10,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background: linear-gradient(#ff9500, #ff5e3a);
-  font-family: Overpass;
+  font-family: Overpass, sans-serif;
+  line-height: 1.5;
   color: #fff;
 }
 
@@ -19,18 +19,30 @@ html {
   box-sizing: inherit;
 }
 
-ul {
+body {
+  margin: 0;
+  display: block;
+  width: 100%;
+  background-image: linear-gradient(#ff9500, #ff5e3a);
+}
+
+section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  margin: 0;
-  padding: 0;
+  gap: 6vmin;
+  padding: 1rem 6vmin;
 }
 
 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: #fff;
 }
@@ -41,13 +53,13 @@ a {
   width: 8em;
 }
 
-.icon svg {
+svg {
   left: 0;
   height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
-  fill: #fff;
+  fill: currentColor;
 }
 
 li {
@@ -55,10 +67,32 @@ li {
   text-decoration: none;
 }
 
-p, .ghost-btn {
+h3 {
   font-weight: normal;
 }
 
 h1 {
   text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.ghost-btn {
+  border: solid .2rem #fff;
+  padding: 1rem;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+  font-size: 100%;
+  line-height: 1.4;
+}
+
 }
